@@ -1,0 +1,293 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.containerOverlayInicio{
+    position: relative;
+    top: 0vh;
+    transition: all ease-in 1s;
+}
+
+.overlayInicioBase{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.camadaOverlayInicioBase1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(110, 110, 110);
+    z-index: 101;
+}
+
+.camadaOverlayInicioBase2{
+    width: 100%;
+    height: 100%;
+    background-color: #555555;
+    box-shadow: 0px 0px 5px #555555;
+    z-index: 102;
+}
+
+.escritoAcessar{
+    position: absolute;
+    font-size: 3rem;
+    color: #dba400;
+    font-family: "fonteRestauranteGeral";
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: all ease-in-out 0.2s;
+    top: 77vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    z-index: 104;
+}
+
+.escritoAcessar:hover{
+    color: #ffc000;
+}
+
+.macanetaAcessar{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    width: 26vw;
+    height: 10vh;
+    top: 80vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    z-index: 103;
+}
+
+.macanetaEsquerda{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+}
+
+.macanetaDireita{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+}
+
+.macanetaBaixo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+    border-top: 1px solid #292929;
+}
+
+.containerPrincipal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff8e2;
+}
+
+.camadaSuperiorTopo{
+    width: 100vw;
+    height: 10vh;
+    background-color: #7a4e1b;
+}
+
+.camadaInferiorTopo{
+    width: 100vw;
+    height: 4vh;
+    background-color: #ffc000;
+    box-shadow: 0px 4px 8px #707070;
+}
+
+.containerLogoRestaurante{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: #7a4e1b;
+    left: 50vw;
+    top: 4vh;
+    transform: translateX(-50%);
+    border: 1px solid #ffc000;
+    box-shadow: 0px 0px 14px #000000;
+}
+
+.logoRestaurante{
+    background-image: url("img/logoRestaurante.png");
+    height: 8rem;
+    width: 14rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.disclaimerOpções{
+    font-size: 3rem;
+    font-family: "fonteEscritaGeral";
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.containerOpcoesBanco{
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.correnteOpcao{
+    width: 50%;
+    height: 100%;
+    border-left: 3px dashed #4d2e0b;
+    border-right: 3px dashed #4d2e0b;
+    margin: auto;
+}
+
+.opcaoBanco{
+    background-color: #ffc000;
+    border: 2px solid #7a4e1b;
+    color: #4d2e0b;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    border-radius: 6px;
+    font-family: "fonteRestauranteGeral";
+    font-size: 1.6vw;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.opcaoBanco:hover{
+    background-color: #ffc000;
+    border: 2px solid #4d2e0b;
+    color: #301b03;
+    box-shadow: 0px 0px 20px #ffc000;
+}
+
+.containerTabela{
+    height: 86vh;
+    width: 100vw;
+    background-color: #fddd7b;
+    overflow: auto;
+}
+
+.tabelaOpcao{
+    width: fit-content;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0px;
+    padding-top: 6rem;
+}
+
+th{ 
+    font-size: 2.2vw;
+    font-family: "fonteEscritaGeral";
+    width: 0px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+tr:hover{
+    background-color: #ebb40f;
+}
+
+td{
+    text-align: center;
+    font-size: 2vw;
+    font-family: "fonteEscritaGeral";
+    width: fit-content;
+}
+
+.inputDado{
+    text-align: center;
+    font-size: 2vw;
+    font-family: "fonteEscritaGeral";
+    width: fit-content;
+    background: transparent;
+    border: none;
+}
+
+.inputDado:hover{
+    background: #ffc000;
+}
+
+.inputDado:focus{
+    outline: none;
+    border: 1px dashed black;
+    background-color: #ffebaf;
+}
+
+.voltarMenu{
+    position: absolute;
+    font-size: 2rem;
+    font-family: "fonteRestauranteGeral";
+    height: 10vh;
+    padding-left: 2vw;
+    padding-right: 3vw;
+    border: none;
+    background-color: #7a4e1b;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.voltarMenu:hover{
+    color: #ffc000;
+}
+
+.excluirLinha{
+    font-weight: 800;
+    border: none;
+    background: transparent;
+    font-family: "fonteRestauranteGeral";
+}
+
+.excluirLinha:hover{
+    color: red;
+}
+
+.salvarLinha{
+    font-weight: 800;
+    font-size: 2vw;
+    border: none;
+    background: transparent;
+    font-family: "fonteEscritaGeral";
+}
+
+.salvarLinha:hover{
+    color: green;
+}
+
+.addLinha{
+    font-weight: 800;
+    font-size: 3vw;
+    border: none;
+    background: transparent;
+    font-family: "fonteEscritaGeral";
+}
+
+.addLinha:hover{
+    color: green;
+}
+
+@font-face {
+    font-family: "fonteRestauranteGeral";
+    src: url("fonts/Insanibc.ttf");
+}
+
+@font-face {
+    font-family: "fonteEscritaGeral";
+    src: url("fonts/BebasNeue-Regular.ttf");
+}

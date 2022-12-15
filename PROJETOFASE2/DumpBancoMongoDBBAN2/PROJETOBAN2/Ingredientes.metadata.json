@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"b9ff3030274e45988f0613648da8d4e6","collectionName":"Ingredientes","type":"collection"}
